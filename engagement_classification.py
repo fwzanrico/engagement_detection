@@ -165,7 +165,7 @@ class FaceMeshDetector:
 def main():
     session_name = input("enter session id with a format of subject_activity: ")
     detector = FaceMeshDetector(session_name)
-    cap = cv2.VideoCapture(1)
+    cap = cv2.VideoCapture(0)
     
     print(f"Session ID: {detector.session_id}")
     print(f"Saving data to: {detector.session_folder}")
